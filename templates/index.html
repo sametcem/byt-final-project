@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block body %}
+      <p>
+        {% if request.user.is_authenticated %}
+                <strong>Logged in, Welcome <i style="color:red"> {{request.user.username}}</i>!</strong>
+                <hr>
+        {% else %}
+                <h3 style="Arial Black, Gadget, sans-serif;"><i> Please Log In</i>  </h3>
+                <hr>
+        {% endif %}
+
+
+    </p>
+    <div class = "jumbotron text-center">
+        <h3 style="color:red"> Welcome to the BYT Project of Samet Cem Habiboglu(s17181)</h3>
+        <p><b> In cemBYT, you will have fun and you will be able to share your articles with people!</b></p>
+        <p><u> You may look the UML Diagram of the project below! </u></p>
+        <img  style="border:5px solid black" src="media/UML_diagram_s17181.png" alt="uml">
+        <br></br>
+        <br></br>
+        <img  style="border:5px solid black" src="media/pjatk.png" alt="uml">
+    </div>
+  
+
+  
+    
+{% endblock  %} 

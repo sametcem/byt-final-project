@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+ {% block body  %}
+    <div style="font-family: Arial, Helvetica, sans-serif;font-weight: bold;">
+    <h3> About the Project </h3>
+    <hr>
+    
+    <p>
+    This project is mainly built for sharing articles/notes between people.<br>
+    Users have chances to Add, Update and Delete operations.
+    In order to use "CemBYT", you have to Register to the system(if you don't have account yet). <br>
+    CemBYT is a panel which supports session control, this means that you cannot use some functionalities without logging in.
+    For example, seeing control panel, adding/updating/deleting operations and controlling your articles.<br>
+    <br> IN THE LEFT SIDE, you will see
+    <br> -CemBYT!
+    <br> -About
+    <br> -Articles<br>
+    
+    <br> In CemBYT!, you may see the Introduction and the UML Diagram of the Project, also lovely PJATK logo :)
+    <br>
+    
+    <br> IN THE RIGHT SIDE, you will see
+    <br> -Register Panel
+    <br> -Login Panel<br>
+    <br>
+    After logging in, when you click "Control Panel", you will see Share Article button, in this way, you will add a new article.
+    If you don't have any article yet, you will see "You don't have any article yet" message.
+   </p>
+   <p>
+    Creating Article:
+    <br>
+    - Title
+    <br>
+    - Content (Supported by CKEditor)
+    <br>
+    - Add Photo on Article
+    </p>
+    <p>
+    In Control Panel you may see your individual articles(In Form format):
+    <br>
+    (When you add a new Article you will see Article is successly added! message), you will see
+    <br>-id
+    <br>-Title
+    <br>-Author
+    <br>-Date
+    <br>-Update Button(You can ONLY update your own Article)
+    <br>-> Update Panel will be shown when you click.(Data will be persistent)
+    <br>-Delete Button(You can ONLY delete your own Article)
+    <br><br/>
+    <img style="border:5px solid black;" src="../media/PJATK-NAUKA.png" alt="pja">
+    <br>
+    <br>
+    All your articles will be published in "Articles", here is a place where all articles are put.
+    <br> You may click "Continue Read" if you want to read all.
+    <br> You may Search Articles on the top.
+    <br> All articles list will be shown with title, author information and created date information.
+    <br> You may click title of Article in order to see the details.
+    <br>
+    When you click an Article, you may also make a comment!
+    <br>
+    All articles will be sorted by newest from the system automatically.
+    <br>
+    Furthermore, Admin Panel is automatically created by Django Web Framework, operations also can be achieved by ../admin.
+    IF YOU ARE ADMIN...
+    </p>
+    <hr>
+    <div>
+    <div>
+      <i>Chosen Technologies</i><br>
+      <br>	Python 3.7
+      <br>	Django 2.1.5 Web Framework
+      <br>	DbSqlite3 (Default Database for Django Web Framework)
+      <br>	HTML5, CSS3, JavaScript, BootStrap 4.3.1, JQuery 3.2.1
+      <br>	CKEditor
+      <br>	Django ORM
+      <br>	Django Crispy Forms
+      <br>	Django Cleanup
+      <br>	Google Code Prettify
+    </div>
+    <hr>
+    <div style="float:right">
+    Created by<i style="color:red"> Samet Cem Habiboglu - s17181 </i>
+    <div>
+
+ {% endblock  %}    
